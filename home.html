@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Your Tales</title>
+    <link rel="shortcut icon" href="icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="home.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <h1>Lets Tell a Tales</h1>
+    </header>
+    <main>
+    <div id="story">
+            <p>Welcome to the beginning of our story...</p>
+            <button onclick="nextChapter()">Continue</button>
+            
+        <div id="stories">
+            <h2>Available Stories</h2>
+            <div class="story">
+                <img src="pics/1.jpg" alt="Story 1">
+                <p>Story 1</p>
+                <button onclick="startStory(0)">Start</button>
+            </div>
+            <div class="story">
+                <img src="pics/2.jpg" alt="Story 2">
+                <p>Story 2</p>
+                <button onclick="startStory(1)">Start</button>
+            </div>
+            <div class="story">
+                <img src="pics/3.jpg" alt="Story 3">
+                <p>Story 3</p>
+                <button onclick="startStory(2)">Start</button>
+            </div>
+            <div class="story">
+                <img src="pics/4.jpg" alt="Story 4">
+                <p>Story 4</p>
+                <button onclick="startStory(3)">Start</button>
+            </div>    
+            <div class="refresh">
+                <button onclick="backToHomePage()">Back to Home Page</button>
+            </div>
+        </div>
+        <div class="tale">
+            <h1>YOU can also share us your POV</h1>
+            <textarea id="story-input" placeholder="write your story..."></textarea>
+         <div class="audio-container">
+         <label for="audio-input">Use audio instead:</label>
+         <input type="file" id="audio-input" accept="audio/*" />
+        </div>
+     </div>
+    </div>
+    <div class="connect">
+        <h1>connect to physical libraries</h1>
+        <div class="kpl">
+            <img src="3.jpg" alt="kpl">
+            <figcaption>join KPL in Kigali Kacyiru</figcaption>
+        </div>
+        <div class="huye">
+            <img src="2.jpg" alt="kpl">
+            <figcaption>join Huyelibrary in Huye</figcaption>
+        </div>
+        <div class="vjn">
+            <img src="1.jpg" alt="kpl">
+            <figcaption>join Vision Jeunesse Nouvelle in rubavu</figcaption>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <div class="icon-container">
+            <i class="fas fa-book"></i>
+            <i class="fas fa-book-reader"></i>
+            <i class="fas fa-book-open"></i>
+            <i class="fas fa-book-medical"></i>
+          </div>        
+        <p>&copy; 2024 Tell Your Tales</p>
+    </footer>
+    <script src="home.js"></script>
+    <script src="redirect.js"></script>
+
+</body>
+</html>
